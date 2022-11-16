@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <meta>
+        <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="website-eriksiegel-nl.xpr">
+        <folder path="../"/>
+        <folder path="../../website/"/>
+        <folder path="../../xtpxlib-common/"/>
+        <folder path="../../xtpxlib-webdoc/"/>
+        <folder path="../../xtpxlib-xwebgen/"/>
+    </projectTree>
+</project>

@@ -1,2 +1,3 @@
 # website-eriksiegel-nl
-Website for eriksiegel.nl
+
+Website source and GitHub pages for eriksiegel.nl
