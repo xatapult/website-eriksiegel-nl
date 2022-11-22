@@ -6,6 +6,7 @@
     <page xmlns="">
 
       <block layout="text-right">
+        
         <text>
           <p>
             <img src="images/logo.png"/>
@@ -27,7 +28,12 @@
             </li>
           </ul>
         </text>
-        <carousel dir="test"/>
+        
+        <carousel>
+          <image href="pinball/pinball-3.jpg"/>
+          <image href="pinball/pinball-4.jpg"/>
+          <image href="pinball/pinball-6.jpg"/>  
+        </carousel>
       </block>
 
 

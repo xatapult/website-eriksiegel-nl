@@ -24,6 +24,8 @@
     <div class="container pt-5">
       <page-contents-expand xmlns="http://www.xtpxlib.nl/ns/xwebgen"/>
     </div>
+    <!-- Footer: -->
+    <p>&#160;</p>
     <script src="js/bootstrap.bundle.min.js"><!-- --></script>
   </body>
 </html>

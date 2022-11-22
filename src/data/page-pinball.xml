@@ -4,16 +4,51 @@
 
   <section id="page" href-transformer="xsl/convert-page.xsl">
     <page xmlns="">
+      
+      <block>
+        <text>
+          <h1 >The incredible inside-out pinball machine</h1>
+        </text>
+      </block>
 
       <block layout="text-left">
         <text>
           <p>Once upon a time I bought a derelict pinball machine.</p>
           <p>According to the previous owner it was "beyond repair"...</p>
+          <p>I was able to get my hands on the original electric schematic, so I started restoring this beautiful piece of machinery.</p>
         </text>
-        <image href="pinball/pinball-original-1.jpg"/>
+        <carousel>
+          <image href="pinball/pinball-original-1.jpg"/>
+          <image href="pinball/pinball-original-2.jpg"/>
+          <image href="pinball/pinball-original-3.jpg"/>
+          <image href="pinball/schematic.jpg"/>
+        </carousel>
       </block>
 
-
+      <block layout="text-right">
+        <text>
+          <p>End result after more than two years: the pinball machine was fully functioning again!</p>
+          <p>This is how it looks now.</p>
+          <p>It was too big to keep. I gave it to a friend who has a large man-cave.</p>
+        </text>
+        <carousel>
+          <image href="pinball/pinball-1.jpg"/>
+          <image href="pinball/pinball-2.jpg"/>
+          <image href="pinball/pinball-3.jpg"/>
+          <image href="pinball/pinball-4.jpg"/>
+          <image href="pinball/pinball-5.jpg"/>
+          <image href="pinball/pinball-6.jpg"/>
+        </carousel>
+      </block>
+      
+      <block layout="text-left">
+        <text>
+          <p>&#160;</p>
+          <p>This is a film I made halfway the project.</p>
+          <p>Unfortunately, I never got around to making a video about the end result.</p>
+        </text>
+        <youtube href="https://www.youtube.com/embed/ZGMBEy5Xjb0"/>
+      </block>
 
     </page>
   </section>

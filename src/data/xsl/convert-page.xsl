@@ -19,7 +19,9 @@
             <carousel dir?="(directory with images only, relative to images directory)">
               <image .../>? (when @dir is specified, these elements are ignored)
             </carousel>
-            (for a text-full page the image/carousel element is ignored)
+            - or -
+            <youtube href="..."/>
+            (for a text-full page the image/carousel/youtube element is ignored)
             
           </block>
           
@@ -63,12 +65,12 @@
             <xsl:apply-templates select="text"/>
           </div>
           <div class="col-sm-6">
-            <xsl:apply-templates select="(image | carousel)[1]"/>
+            <xsl:apply-templates select="(image | carousel | youtube)[1]"/>
           </div>
         </xsl:when>
         <xsl:when test="$layout eq 'text-right'">
           <div class="col-sm-6">
-            <xsl:apply-templates select="(image | carousel)[1]"/>
+            <xsl:apply-templates select="(image | carousel | youtube)[1]"/>
           </div>
           <div class="col-sm-6">
             <xsl:apply-templates select="text"/>
@@ -95,7 +97,15 @@
   <xsl:template match="/page/block/image">
     <xsl:call-template name="handle-image"/>
   </xsl:template>
-
+  
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  
+  <xsl:template match="/page/block/youtube">
+    <div class="tutorial container text-center my-5 ratio ratio-16x9">
+      <iframe class="embed-responsive-item" src="{@href}?rel=0" allowfullscreen="true"></iframe>
+    </div>
+  </xsl:template>
+  
   <!-- ======================================================================= -->
   <!-- CAROUSEL -->
 
@@ -134,7 +144,6 @@
     <xsl:for-each select="$images">
       <xsl:variable name="div-class-parts" as="xs:string+">
         <xsl:sequence select="'carousel-item'"/>
-        <xsl:sequence select="'pt-5'"/>
         <xsl:if test="position() eq 1">
           <xsl:sequence select="'active'"/>
         </xsl:if>
