@@ -1,0 +1,21 @@
+<xwebgen-sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.xtpxlib.nl/ns/xwebgen ../../../xtpxlib-xwebgen/xsd/xwebgen-sections.xsd" xmlns="http://www.xtpxlib.nl/ns/xwebgen"
+  xmlns:xtlwg="http://www.xtpxlib.nl/ns/xwebgen">
+
+  <section id="page" href-transformer="xsl/convert-page.xsl">
+    <page xmlns="">
+
+      <block layout="text-left">
+        <text>
+          <p>Once upon a time I bought a derelict pinball machine.</p>
+          <p>According to the previous owner it was "beyond repair"...</p>
+        </text>
+        <image href="pinball/pinball-original-1.jpg"/>
+      </block>
+
+
+
+    </page>
+  </section>
+
+</xwebgen-sections>

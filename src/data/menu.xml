@@ -1,0 +1,28 @@
+<xwebgen-sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.xtpxlib.nl/ns/xwebgen ../../../xtpxlib-xwebgen/xsd/xwebgen-sections.xsd" xmlns="http://www.xtpxlib.nl/ns/xwebgen">
+  <!-- ================================================================== -->
+  <!--
+    Data for the main menu of the website
+  -->
+  <!-- ================================================================== -->
+
+  <section id="menu" href-transformer="xsl/convert-menu-structure.xsl">
+    <mainmenu xmlns="">
+
+      <!-- Home: -->
+      <menu href="/" caption="Home"/>
+
+      <!-- Projects: -->
+      <menu caption="Projects">
+        <!-- Take care to update this in parallel with the list on the home page (in page-home.xml)! -->
+        <submenu href="pinball.html" caption="Inside-out pinball machine"/>
+        <submenu href="marble-clock.html" caption="Marble clock"/>
+      </menu>
+
+      <!-- About -->
+      <menu href="about.html" caption="About"/>
+
+    </mainmenu>
+  </section>
+
+</xwebgen-sections>

@@ -1,0 +1,38 @@
+<xwebgen-sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.xtpxlib.nl/ns/xwebgen ../../../xtpxlib-xwebgen/xsd/xwebgen-sections.xsd" xmlns="http://www.xtpxlib.nl/ns/xwebgen"
+  xmlns:xtlwg="http://www.xtpxlib.nl/ns/xwebgen">
+
+  <section id="page" href-transformer="xsl/convert-page.xsl">
+    <page xmlns="">
+
+      <block layout="text-right">
+        <text>
+          <p>
+            <img src="images/logo.png"/>
+          </p>
+
+          <p>With components and wires clearly visible, installations are created that are meant to evoke amazement at the usually hidden complexity
+            of technology.</p>
+          <p> Older electromechanical parts, whose operation is usually clearly visible and understandable, are considered especially beautiful.</p>
+          <p>By combining these with modern components, such as LEDs, microcontrollers and semiconductors, and with moving parts, such as marble
+            tracks and electric motors, interesting objects are created.</p>
+          
+          <!-- Take care to update this in parallel with the menu (in menu.xml)! -->
+          <ul>
+            <li class="lead">
+              <a href="pinball.html">The incredible inside-out pinball machine</a>
+            </li>
+            <li class="lead">
+              <a href="marble-clock.html">The marble clock</a>
+            </li>
+          </ul>
+        </text>
+        <carousel dir="test"/>
+      </block>
+
+
+
+    </page>
+  </section>
+
+</xwebgen-sections>

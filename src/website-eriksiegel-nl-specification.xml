@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xwebgen-specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.xtpxlib.nl/ns/xwebgen ../../xtpxlib-xwebgen/xsd/xwebgen-specification.xsd" xmlns="http://www.xtpxlib.nl/ns/xwebgen"
+  xmlns:xtlwg="http://www.xtpxlib.nl/ns/xwebgen" href-base-output-dir="../build/eriksiegel-nl">
+
+  <!-- ================================================================== -->
+  <!--
+    xwebgen specification file for the eriksiegel.nl website. 
+  -->
+  <!-- ================================================================== -->
+  <!-- TEMPLATES: -->
+
+  <template id="main" href-source="templates/eriksiegel-nl-main-page-template.xml"/>
+
+  <!-- ================================================================== -->
+  <!-- PAGES: -->
+
+  <!-- pages: -->
+  <page template-idref="main" href-section-document="data/page-home.xml" section-idref="page" href-target="index.html"/>
+  <page template-idref="main" href-section-document="data/page-about.xml" section-idref="page" href-target="about.html"/>
+  <page template-idref="main" href-section-document="data/page-pinball.xml" section-idref="page" href-target="pinball.html"/>
+
+  <!-- ================================================================== -->
+  <!-- FIXED DIRECTORIES: -->
+
+  <copy-dir href-source-dir="images"/>
+  <copy-dir href-source-dir="css"/>
+  <copy-dir href-source-dir="js"/>
+  <copy-dir href-source-dir="resources"/>
+
+  <!-- ================================================================== -->
+  <!-- GLOBAL PROPERTIES: -->
+
+  <properties>
+
+    <!-- Default page title (override this for specific pages if necessary): -->
+    <property id="page-title">Erik&#x2019;s&#160;Theatronics</property>
+    
+  </properties>
+
+</xwebgen-specification>
