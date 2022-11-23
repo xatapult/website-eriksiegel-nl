@@ -10,13 +10,17 @@
     <mainmenu xmlns="">
 
       <!-- Home: -->
-      <menu href="/" caption="Home"/>
+      <menu href="index.html" caption="Home"/>
 
       <!-- Projects: -->
       <menu caption="Projects">
         <!-- Take care to update this in parallel with the list on the home page (in page-home.xml)! -->
-        <submenu href="pinball.html" caption="Inside-out pinball machine"/>
+        <submenu href="hs-objects.html" caption="Henk Slomp objects"/>
         <submenu href="marble-clock.html" caption="Marble clock"/>
+        <submenu href="pinball.html" caption="Inside-out pinball machine"/>
+        <submenu href="binary-counter.html" caption="Binary counter"/>
+        <submenu href="clicking-thing.html" caption="Clicking thing"/>
+        <submenu href="ode-to-my-laptop.html" caption="Ode to my laptop"/>
       </menu>
 
       <!-- About -->

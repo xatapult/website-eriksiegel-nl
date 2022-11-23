@@ -4,6 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script defer="defer" src="js/bootstrap.bundle.min.js"><!-- --></script>
     <title>Erik&#x2019;s Theatronics - ${page-title}</title>
     <link rel="shortcut icon" href="images/favicon.ico" />
   </head>
@@ -11,7 +12,7 @@
     <!-- Navigation bar: -->
     <nav class="navbar navbar-expand-sm bg-secondary navbar-dark ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" class="img-fluid" width="50%"/>
           <br/>
           <p style="font-size: 70%; margin-top: 5px;" class=""><i>&#160;Electronics with a theatrical touch</i></p>
@@ -24,8 +25,6 @@
     <div class="container pt-5">
       <page-contents-expand xmlns="http://www.xtpxlib.nl/ns/xwebgen"/>
     </div>
-    <!-- Footer: -->
     <p>&#160;</p>
-    <script src="js/bootstrap.bundle.min.js"><!-- --></script>
   </body>
 </html>

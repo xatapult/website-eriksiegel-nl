@@ -97,20 +97,22 @@
   <xsl:template match="/page/block/image">
     <xsl:call-template name="handle-image"/>
   </xsl:template>
-  
+
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  
+
   <xsl:template match="/page/block/youtube">
     <div class="tutorial container text-center my-5 ratio ratio-16x9">
-      <iframe class="embed-responsive-item" src="{@href}?rel=0" allowfullscreen="true"></iframe>
+      <iframe class="embed-responsive-item" src="{@href}?rel=0" allowfullscreen="true">
+        <xsl:comment> === </xsl:comment>
+      </iframe>
     </div>
   </xsl:template>
-  
+
   <!-- ======================================================================= -->
   <!-- CAROUSEL -->
 
   <xsl:template match="/page/block/carousel">
-    <div class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel slide " data-bs-ride="carousel" id="carousel-{generate-id()}">
       <div class="carousel-inner">
         <xsl:choose>
           <xsl:when test="exists(@dir)">
@@ -120,7 +122,7 @@
             <xsl:comment> == Directory: {@dir-full} == </xsl:comment>
             <xsl:call-template name="handle-images-for-carousel">
               <xsl:with-param name="images" as="element(image)+">
-                <xsl:for-each select="file:list($dir-full, false())" >
+                <xsl:for-each select="file:list($dir-full, false())">
                   <image xmlns="" href="{xtlc:href-concat(($dir, .))}"/>
                 </xsl:for-each>
               </xsl:with-param>
@@ -156,16 +158,16 @@
 
   <!-- ======================================================================= -->
   <!-- CHANGE STUFF IN THE TEXT HTML: -->
-  
+
   <xsl:template match="*" mode="mode-handle-text">
     <!-- Put in xhtml namespace -->
     <xsl:element name="{local-name()}">
       <xsl:apply-templates select="@* | node()" mode="#current"/>
     </xsl:element>
   </xsl:template>
-  
+
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  
+
   <xsl:template match="p[empty(@class)]" mode="mode-handle-text">
     <!-- Adds a class="lead" so the font is enhanced. -->
     <xsl:element name="{local-name()}">
@@ -183,13 +185,13 @@
       <xsl:apply-templates select="@* | node()" mode="#current"/>
     </xsl:element>
   </xsl:template>
-  
+
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  
+
   <xsl:template match="processing-instruction() | comment()" mode="mode-handle-text">
     <!-- Discard -->
   </xsl:template>
-  
+
   <!-- ======================================================================= -->
   <!-- GENERAL SUPPORT: -->
 

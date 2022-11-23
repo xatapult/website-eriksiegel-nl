@@ -6,7 +6,7 @@
     <page xmlns="">
 
       <block layout="text-right">
-        
+
         <text>
           <p>
             <img src="images/logo.png"/>
@@ -17,22 +17,47 @@
           <p> Older electromechanical parts, whose operation is usually clearly visible and understandable, are considered especially beautiful.</p>
           <p>By combining these with modern components, such as LEDs, microcontrollers and semiconductors, and with moving parts, such as marble
             tracks and electric motors, interesting objects are created.</p>
-          
+
           <!-- Take care to update this in parallel with the menu (in menu.xml)! -->
           <ul>
             <li class="lead">
-              <a href="pinball.html">The incredible inside-out pinball machine</a>
+              <a href="hs-objects.html">The Henk Slomp objects</a>
             </li>
             <li class="lead">
               <a href="marble-clock.html">The marble clock</a>
             </li>
+            <li class="lead">
+              <a href="pinball.html">The incredible inside-out pinball machine</a>
+            </li>
+            <li class="lead">
+              <a href="binary-counter.html">The binary counter</a>
+            </li>
+            <li class="lead">
+              <a href="ode-to-my-laptop.html">Ode to my laptop</a>
+            </li>
           </ul>
         </text>
-        
+
+        <!-- Add the most juicy pictures to this carousel: -->
         <carousel>
+          <image href="marble-clock/marble-clock-full.png"/>
+          <image href="binary-counter/binary-counter-1.jpg"/>
+          <image href="ode-to-my-laptop/ode-to-my-laptop-1.jpg"/>
+
+          <image href="marble-clock/marble-clock-3.jpg"/>
+          <image href="hs-objects/hs-objects-1.jpg"/>
           <image href="pinball/pinball-3.jpg"/>
+          <image href="binary-counter/binary-counter-2.jpg"/>
+          <image href="marble-clock/marble-clock-5.jpg"/>
+          <image href="hs-objects/hs-objects-6.jpg"/>
           <image href="pinball/pinball-4.jpg"/>
-          <image href="pinball/pinball-6.jpg"/>  
+          <image href="ode-to-my-laptop/ode-to-my-laptop-3.jpg"/>
+          <image href="marble-clock/marble-clock-2.jpg"/>
+          <image href="pinball/pinball-6.jpg"/>
+          <image href="marble-clock/marble-clock-4.jpg"/>
+          <image href="hs-objects/hs-objects-9.jpg"/>
+          <image href="binary-counter/binary-counter-3.jpg"/>
+          <image href="ode-to-my-laptop/ode-to-my-laptop-6.jpg"/>
         </carousel>
       </block>
 

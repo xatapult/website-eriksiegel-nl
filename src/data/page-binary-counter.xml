@@ -1,0 +1,43 @@
+<xwebgen-sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.xtpxlib.nl/ns/xwebgen ../../../xtpxlib-xwebgen/xsd/xwebgen-sections.xsd" xmlns="http://www.xtpxlib.nl/ns/xwebgen"
+  xmlns:xtlwg="http://www.xtpxlib.nl/ns/xwebgen">
+
+  <section id="page" href-transformer="xsl/convert-page.xsl">
+    <page xmlns="">
+
+      <block>
+        <text>
+          <h1>The binary counter</h1>
+        </text>
+      </block>
+
+      <block layout="text-right">
+        <text>
+          <p>Computers are full of binary registers and counters. This is an attempt to construct a 4-bit binary counter with electromechanical
+            relays. </p>
+          <p>It also displays the resulting 4-bit binary number on a regular 7-segment display.</p>
+          <p>&#160;</p>
+          
+        </text>
+        <carousel>
+          <image href="binary-counter/binary-counter-1.jpg"/>
+          <image href="binary-counter/binary-counter-2.jpg"/>
+          <image href="binary-counter/binary-counter-3.jpg"/>
+          <image href="binary-counter/binary-counter-4.jpg"/>
+          <image href="binary-counter/binary-counter-5.jpg"/>
+        </carousel>
+      </block>
+
+      <block layout="text-left">
+        <text>
+          <p>&#160;</p>
+          <p>Watch it in action…</p>
+          <p>You can also view the <a href="resources/binary-counter-en.pdf" target="_blank">information sheet</a>.</p>
+        </text>
+        <youtube href="https://www.youtube.com/embed/5sreIgCgRPw"/>
+      </block>
+      
+    </page>
+  </section>
+
+</xwebgen-sections>

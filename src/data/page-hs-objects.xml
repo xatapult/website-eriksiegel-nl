@@ -1,0 +1,52 @@
+<xwebgen-sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.xtpxlib.nl/ns/xwebgen ../../../xtpxlib-xwebgen/xsd/xwebgen-sections.xsd" xmlns="http://www.xtpxlib.nl/ns/xwebgen"
+  xmlns:xtlwg="http://www.xtpxlib.nl/ns/xwebgen">
+
+  <section id="page" href-transformer="xsl/convert-page.xsl">
+    <page xmlns="">
+
+      <block>
+        <text>
+          <h1>The Henk Slomp objects</h1>
+        </text>
+      </block>
+
+      <block layout="text-right">
+        <text>
+          <p><a href="https://www.henkslomp.nl/" target="_blank">Henk Slomp</a> is a Dutch artist that works with steel and other cool materials. He
+            lives and has a gallery at <a
+              href="https://www.google.nl/maps/place/14+Rue+Prte+Fouron,+58140+Lormes,+France/@47.2895305,3.8190509,17z/data=!3m1!4b1!4m5!3m4!1s0x47f1e4150677be81:0xbc6ac40a50095c6d!8m2!3d47.2895305!4d3.8190509"
+              target="_blank">Rue Porte Fouron 14, Lormes, France</a> (in the Morvan).</p>
+          <p>We met in the summer of 2021, purely by chance. Together we created an installation with steel egg-shaped objects hanging in a space.
+            These objects click, light, move and react on where you are in the room.</p>
+          <p>You can visit the installation (the gallery is open on Thursdays and Saturdays), walk between the objects and see and hear how they react
+            to you. It&#x2019;s a magical experience.</p>
+        </text>
+        <carousel>
+          <image href="hs-objects/hs-objects-6.jpg"/>
+          <image href="hs-objects/hs-objects-1.jpg"/>
+          <image href="hs-objects/hs-objects-2.jpg"/>
+          <image href="hs-objects/hs-objects-3.jpg"/>
+          <image href="hs-objects/hs-objects-4.jpg"/>
+          <image href="hs-objects/hs-objects-5.jpg"/>
+          <image href="hs-objects/hs-objects-7.jpg"/>
+          <image href="hs-objects/hs-objects-8.jpg"/>
+          <image href="hs-objects/hs-objects-9.jpg"/>
+          <image href="hs-objects/hs-objects-10.jpg"/>
+        </carousel>
+      </block>
+
+      <block layout="text-left">
+        <text>
+          <p>&#160;</p>
+          <p>This film was made when the objects were still work in progress.</p>
+          <p>You can also view an information sheet about the <a href="resources/hso-controlbox-en.pdf" target="_blank">central control box</a> and
+            about the <a href="resources/hso-interior-en.pdf" target="_blank">thing&#x2019;s interiors</a>.</p>
+        </text>
+        <youtube href="https://www.youtube.com/embed/SPCe1GHVnzk"/>
+      </block>
+
+    </page>
+  </section>
+
+</xwebgen-sections>

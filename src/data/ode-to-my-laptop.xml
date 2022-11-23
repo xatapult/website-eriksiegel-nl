@@ -1,0 +1,26 @@
+<xwebgen-sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.xtpxlib.nl/ns/xwebgen ../../../xtpxlib-xwebgen/xsd/xwebgen-sections.xsd" xmlns="http://www.xtpxlib.nl/ns/xwebgen"
+  xmlns:xtlwg="http://www.xtpxlib.nl/ns/xwebgen">
+
+  <section id="page" href-transformer="xsl/convert-page.xsl">
+    <page xmlns="">
+
+      <block>
+        <text>
+          <h1>Ode to my laptop</h1>
+        </text>
+      </block>
+
+      <block layout="text-left">
+        <text>
+          <p>This work is made from parts of an old laptop of mine.</p>
+          <p>After so many years of loyal service, it's an &#x201c;ode to my laptop&#x201d;…</p>
+          <p>You can also view the <a href="resources/ode-en.pdf" target="_blank">information sheet</a>.</p>
+        </text>
+        <image href="ode-to-my-laptop/ode-to-my-laptop-full.jpg"/>
+      </block>
+
+    </page>
+  </section>
+
+</xwebgen-sections>

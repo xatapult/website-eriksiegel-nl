@@ -19,6 +19,11 @@
   <page template-idref="main" href-section-document="data/page-home.xml" section-idref="page" href-target="index.html"/>
   <page template-idref="main" href-section-document="data/page-about.xml" section-idref="page" href-target="about.html"/>
   <page template-idref="main" href-section-document="data/page-pinball.xml" section-idref="page" href-target="pinball.html"/>
+  <page template-idref="main" href-section-document="data/page-hs-objects.xml" section-idref="page" href-target="hs-objects.html"/>
+  <page template-idref="main" href-section-document="data/page-marble-clock.xml" section-idref="page" href-target="marble-clock.html"/>
+  <page template-idref="main" href-section-document="data/page-binary-counter.xml" section-idref="page" href-target="binary-counter.html"/>
+  <page template-idref="main" href-section-document="data/page-clicking-thing.xml" section-idref="page" href-target="clicking-thing.html"/>
+  <page template-idref="main" href-section-document="data/ode-to-my-laptop.xml" section-idref="page" href-target="ode-to-my-laptop.html"/>
 
   <!-- ================================================================== -->
   <!-- FIXED DIRECTORIES: -->
