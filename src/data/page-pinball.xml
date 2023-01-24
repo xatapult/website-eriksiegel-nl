@@ -5,12 +5,8 @@
   <section id="page" href-transformer="xsl/convert-page.xsl">
     <page xmlns="">
       
-      <block>
-        <text>
-          <h1 >The incredible inside-out pinball machine</h1>
-        </text>
-      </block>
-
+      <titleblock previous-project="marble-clock" next-project="binary-counter">The incredible inside-out pinball machine</titleblock>
+      
       <block layout="text-left">
         <text>
           <p>Once upon a time I bought a derelict pinball machine.</p>

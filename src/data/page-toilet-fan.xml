@@ -1,0 +1,31 @@
+<xwebgen-sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.xtpxlib.nl/ns/xwebgen ../../../xtpxlib-xwebgen/xsd/xwebgen-sections.xsd"
+  xmlns="http://www.xtpxlib.nl/ns/xwebgen" xmlns:xtlwg="http://www.xtpxlib.nl/ns/xwebgen">
+
+  <section id="page" href-transformer="xsl/convert-page.xsl">
+    <page xmlns="">
+      
+      <titleblock previous-project="ode-to-my-laptop">The toilet fan</titleblock>
+
+      <!--<block>
+        <text>
+          <h1><img src="images/previous.png" width="10%"/>The toilet fan</h1>
+        </text>
+      </block>-->
+
+      <block layout="text-left">
+        <text>
+          <p>A friend gave me an old elevator button panel. From this I made a control panel for the fan in our
+            toilet..</p>
+          <p>The more unpleasant smells, the higher the floor you should choose…</p>
+          <br/>
+          <p>Inside are an Arduino and a couple of relays to insulate the 220v part from the 5v part.</p>
+
+        </text>
+        <image href="toilet-fan/toilet-fan-1.png" width="60%"/>
+      </block>
+
+    </page>
+  </section>
+
+</xwebgen-sections>

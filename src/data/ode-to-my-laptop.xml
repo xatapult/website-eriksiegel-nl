@@ -5,11 +5,7 @@
   <section id="page" href-transformer="xsl/convert-page.xsl">
     <page xmlns="">
 
-      <block>
-        <text>
-          <h1>Ode to my laptop</h1>
-        </text>
-      </block>
+    <titleblock previous-project="clicking-thing" next-project="toilet-fan">Ode to my laptop</titleblock>
 
       <block layout="text-left">
         <text>

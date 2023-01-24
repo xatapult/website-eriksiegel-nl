@@ -4,13 +4,9 @@
 
   <section id="page" href-transformer="xsl/convert-page.xsl">
     <page xmlns="">
-
-      <block>
-        <text>
-          <h1>The clicking thing</h1>
-        </text>
-      </block>
-
+      
+      <titleblock previous-project="binary-counter" next-project="ode-to-my-laptop">The clicking thing</titleblock>
+    
       <block layout="text-right">
         <text>
           <p>This is an object that just clicks.</p>

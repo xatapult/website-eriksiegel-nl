@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:map="http://www.w3.org/2005/xpath-functions/map"
-  xmlns:array="http://www.w3.org/2005/xpath-functions/array" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="#local.ndr_kch_pvb"
-  xmlns:file="http://expath.org/ns/file" xmlns:xtlc="http://www.xtpxlib.nl/ns/common" xmlns="http://www.w3.org/1999/xhtml"
-  exclude-result-prefixes="#all" expand-text="true">
+<xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:map="http://www.w3.org/2005/xpath-functions/map" xmlns:array="http://www.w3.org/2005/xpath-functions/array"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:local="#local.ndr_kch_pvb" xmlns:file="http://expath.org/ns/file"
+  xmlns:xtlc="http://www.xtpxlib.nl/ns/common" xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="#all"
+  expand-text="true">
   <!-- ================================================================== -->
   <!-- 
        Converts a basic page into html. XML layout:
        
         <page>
+        
+          <titleblock previous-project?="..." next-project?="...">title text</titleblock>
+        
           <block layout="text-left | text-right | text-full"> (text-full is default)
           
             <text>
@@ -51,6 +55,31 @@
       <xsl:apply-templates select="*"/>
     </div>
   </xsl:template>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <xsl:template match="page/titleblock">
+    <div class="row pt-5">
+      <div class="col-sm-12">
+        <h1>
+          <xsl:if test="exists(@previous-project)">
+            <a href="{local:project-ref(@previous-project)}">
+              <img src="images/previous.png" width="1.5%" style="opacity:0.3;" title="Previous project"/>
+            </a>
+            <xsl:text>&#160;</xsl:text>
+          </xsl:if>
+          <xsl:value-of select="."/>
+          <xsl:if test="exists(@next-project)">
+            <xsl:text>&#160;</xsl:text>
+            <a href="{local:project-ref(@next-project)}">
+              <img src="images/next.png" width="1.5%" style="opacity:0.3;" title="Next project"/>
+            </a>
+          </xsl:if>
+        </h1>
+      </div>
+    </div>
+  </xsl:template>
+
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -118,7 +147,8 @@
           <xsl:when test="exists(@dir)">
             <!-- Handle directory with images -->
             <xsl:variable name="dir" as="xs:string" select="@dir"/>
-            <xsl:variable name="dir-full" as="xs:string" select="resolve-uri('../../images/' || $dir, static-base-uri())"/>
+            <xsl:variable name="dir-full" as="xs:string"
+              select="resolve-uri('../../images/' || $dir, static-base-uri())"/>
             <xsl:comment> == Directory: {@dir-full} == </xsl:comment>
             <xsl:call-template name="handle-images-for-carousel">
               <xsl:with-param name="images" as="element(image)+">
@@ -201,5 +231,20 @@
       <xsl:copy-of select="$image/@* except $image/@href"/>
     </img>
   </xsl:template>
-
+  
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  
+  <xsl:function name="local:project-ref" as="xs:string">
+    <xsl:param name="ref" as="xs:string"/>
+    
+    <xsl:choose>
+      <xsl:when test="ends-with($ref, '.html')">
+        <xsl:sequence select="$ref"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:sequence select="$ref || '.html'"/>
+      </xsl:otherwise>  
+    </xsl:choose>
+  </xsl:function>
+  
 </xsl:stylesheet>
