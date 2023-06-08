@@ -21,15 +21,15 @@
   <p:import href="../../xtpxlib-xwebgen/xplmod/create-site.mod/create-site.mod.xpl"/>
 
   <!-- ================================================================== -->
-<!-- Create the site: -->
-  
+  <!-- Create the site: -->
+
   <xtlwg:create-site>
     <p:with-option name="href-specification" select="$href-specification"/>
   </xtlwg:create-site>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!-- Generate some report thingy: -->
-  
+
   <p:wrap match="/*" wrapper="eriksiegel-nl-website-generation-results"/>
   <p:add-attribute attribute-name="timestamp" match="/*">
     <p:with-option name="attribute-value" select="current-dateTime()"/>
