@@ -25,6 +25,7 @@
   <page template-idref="main" href-section-document="data/page-clicking-thing.xml" section-idref="page" href-target="clicking-thing.html"/>
   <page template-idref="main" href-section-document="data/ode-to-my-laptop.xml" section-idref="page" href-target="ode-to-my-laptop.html"/>
   <page template-idref="main" href-section-document="data/page-toilet-fan.xml" section-idref="page" href-target="toilet-fan.html"/>
+  <page template-idref="main" href-section-document="data/page-column-marble-gambler.xml" section-idref="page" href-target="column-marble-gambler.html"/>
 
   <!-- ================================================================== -->
   <!-- FIXED DIRECTORIES: -->

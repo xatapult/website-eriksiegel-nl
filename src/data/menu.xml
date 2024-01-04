@@ -15,6 +15,7 @@
       <!-- Projects: -->
       <menu caption="Projects">
         <!-- Take care to update this in parallel with the list on the home page (in page-home.xml)! -->
+        <submenu href="column-marble-gambler.html" caption="Black column marble gambler"/>
         <submenu href="hs-objects.html" caption="Henk Slomp objects"/>
         <submenu href="marble-clock.html" caption="Marble clock"/>
         <submenu href="pinball.html" caption="Inside-out pinball machine"/>

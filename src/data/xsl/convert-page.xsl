@@ -146,7 +146,7 @@
         <xsl:choose>
           <xsl:when test="exists(@dir)">
             <!-- Handle directory with images -->
-            <xsl:variable name="dir" as="xs:string" select="@dir"/>
+            <!--<xsl:variable name="dir" as="xs:string" select="@dir"/>
             <xsl:variable name="dir-full" as="xs:string"
               select="resolve-uri('../../images/' || $dir, static-base-uri())"/>
             <xsl:comment> == Directory: {@dir-full} == </xsl:comment>
@@ -156,7 +156,8 @@
                   <image xmlns="" href="{xtlc:href-concat(($dir, .))}"/>
                 </xsl:for-each>
               </xsl:with-param>
-            </xsl:call-template>
+            </xsl:call-template>-->
+            <xsl:sequence select="error((),'carousel/@dir no longer supported')"/>
           </xsl:when>
           <xsl:otherwise>
             <xsl:call-template name="handle-images-for-carousel">

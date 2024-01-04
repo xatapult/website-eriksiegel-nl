@@ -1,0 +1,36 @@
+<xwebgen-sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.xtpxlib.nl/ns/xwebgen ../../../xtpxlib-xwebgen/xsd/xwebgen-sections.xsd" xmlns="http://www.xtpxlib.nl/ns/xwebgen"
+  xmlns:xtlwg="http://www.xtpxlib.nl/ns/xwebgen">
+
+  <section id="page" href-transformer="xsl/convert-page.xsl">
+    <page xmlns="">
+      
+      <titleblock next-project="hs-objects">The black column marble gambler</titleblock>
+    
+      <block layout="text-right">
+        <text>
+          <p>The "Black Column Marble Gambler" is an object built from old relays and components salvaged from an ancient telex machine.</p>
+          <p>Try to guess through which hole the marble is swept.</p>
+          <p>A lift transports the marble to a rotating disk on the top, where a Smurf will try to sweep the marble into one of the gates.</p>
+          <p>Your reward when you guessed right? A bright electronic smile!</p>
+        </text>
+        <carousel>
+          <image href="column-marble-gambler/cmg-front.jpg"/>
+          <image href="column-marble-gambler/cmg-side-1.jpg"/>
+          <image href="column-marble-gambler/cmg-side-2.jpg"/>
+          <image href="column-marble-gambler/cmg-top.jpg"/>
+        </carousel>
+      </block>
+
+      <block layout="text-left">
+        <text>
+          <p>&#160;</p>
+          <p>Watch it in action…</p>
+        </text>
+        <youtube href="https://www.youtube.com/embed/YyjSS6dj18I"/>
+      </block>
+
+    </page>
+  </section>
+
+</xwebgen-sections>

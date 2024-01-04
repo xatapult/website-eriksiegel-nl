@@ -5,7 +5,7 @@
   <section id="page" href-transformer="xsl/convert-page.xsl">
     <page xmlns="">
 
-      <titleblock next-project="marble-clock">The Henk Slomp objects</titleblock>
+      <titleblock previous-project="column-marble-gambler" next-project="marble-clock">The Henk Slomp objects</titleblock>
 
       <block layout="text-right">
         <text>
