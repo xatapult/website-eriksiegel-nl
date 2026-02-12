@@ -27,16 +27,33 @@
     <p:documentation>Reference to the xwebgen specification file</p:documentation>
   </p:option>
 
+  <p:option name="cname" as="xs:string" required="false" select="'www.eriksiegel.nl'">
+    <p:documentation> </p:documentation>
+  </p:option>
+
   <!-- ================================================================== -->
   <!-- MAIN: -->
 
   <!-- Create the sites: -->
-  <xtlwg:create-site>
+  <xtlwg:create-site name="step-create-site">
     <p:with-input href="{$href-specification}"/>
   </xtlwg:create-site>
 
+  <!-- Create a CNAME document (for the GitHub pages): -->
+  <p:variable name="base-output-dir" as="xs:string" select="/*/@base-output-dir"/>
+  <p:if test="exists($cname)">
+    <p:store serialization="map{'method': 'text'}" message="  * CNAME: {$cname}">
+      <p:with-input>
+        <p:inline xml:space="preserve" content-type="text/plain">{$cname}</p:inline>
+      </p:with-input>
+      <p:with-option name="href" select="string-join(($base-output-dir, 'CNAME'), '/')"/>
+    </p:store>
+  </p:if>
+
   <!-- Create a report thingy: -->
-  <p:wrap match="/*" wrapper="eriksiegel-nl-website-generation-results"/>
+  <p:wrap match="/*" wrapper="eriksiegel-nl-website-generation-results">
+    <p:with-input pipe="@step-create-site"/>
+  </p:wrap>
   <p:add-attribute attribute-name="timestamp" match="/*">
     <p:with-option name="attribute-value" select="string(current-dateTime())"/>
   </p:add-attribute>
