@@ -27,7 +27,7 @@
     <p:documentation>Reference to the xwebgen specification file</p:documentation>
   </p:option>
 
-  <p:option name="cname" as="xs:string" required="false" select="'www.eriksiegel.nl'">
+  <p:option name="cname" as="xs:string" required="false" select="'eriksiegel.nl'">
     <p:documentation> </p:documentation>
   </p:option>
 
