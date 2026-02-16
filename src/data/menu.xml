@@ -27,6 +27,9 @@
 
       <!-- About -->
       <menu href="about.html" caption="About"/>
+      
+      <!-- Link to component-inventory: -->
+      <menu href="https://ci.eriksiegel.nl/" caption="Components" target="_blank"/>
 
     </mainmenu>
   </section>

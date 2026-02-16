@@ -6,21 +6,24 @@
     <page xmlns="">
 
       <block layout="text-left">
-        
+
         <text>
           <h3>About</h3>
           <p>&#160;</p>
           <p>All objects and circuits were designed and built by Erik Siegel.</p>
           <p>He works from The Netherlands and builds working electromechanical objects with a theatrical touch, using old, new and salvaged parts. </p>
+          <p>Over the years, I’ve acquired a large number of electronic components, mostly through the acquisition of secondhand batches of parts.
+            There are so many now that I will probably never be able to use them all in my lifetime. I've made an <a href="https://ci.eriksiegel.nl/"
+              target="_blank">inventory of all my components</a>. Most is for sale, for a friendly price.</p>
           <p>Open to assignments and collaboration.</p>
-          <p>Mail: <a href="mailto:erik@eriksiegel.nl">erik@eriksiegel.nl</a>
-          </p>
+
+          <p>Mail: <a href="mailto:erik@eriksiegel.nl">erik@eriksiegel.nl</a></p>
           <p>Professionally, Erik works as a content engineer, XML expert and technical writer. Visit the <a href="http://www.xatapult.com"
               target="_blank">Xatapult company website</a> for more information.</p>
         </text>
-        
+
         <image href="erik/erik-siegel.jpg" width="75%"/>
-        
+
       </block>
 
     </page>
