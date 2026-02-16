@@ -45,7 +45,10 @@
       </xsl:when>
       <xsl:otherwise>
         <li class="nav-item lead">
-          <a class="nav-link text-light" href="{@href}">{@caption}</a>
+          <a class="nav-link text-light">
+            <xsl:copy-of select="@* except @caption"/>
+            <xsl:value-of select="@caption"/>
+          </a>
         </li>
       </xsl:otherwise>
     </xsl:choose>
@@ -55,7 +58,10 @@
 
   <xsl:template match="/mainmenu/menu/submenu">
     <li class="lead">
-      <a class="dropdown-item" href="{@href}">{@caption}</a>
+      <a class="dropdown-item">
+        <xsl:copy-of select="@* except @caption"/>
+        <xsl:value-of select="@caption"/>
+      </a>
     </li>
   </xsl:template>
 
