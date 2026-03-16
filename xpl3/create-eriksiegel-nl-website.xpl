@@ -28,7 +28,7 @@
   </p:option>
 
   <p:option name="cname" as="xs:string" required="false" select="'eriksiegel.nl'">
-    <p:documentation> </p:documentation>
+    <p:documentation>The CNAME entry for the website</p:documentation>
   </p:option>
 
   <!-- ================================================================== -->
