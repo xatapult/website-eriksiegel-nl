@@ -27,6 +27,9 @@
             <li class="lead">
               <a href="marble-clock.html">The marble clock</a>
             </li>
+            <li class="lead">
+              <a href="freaky-stage.html">The Freaky stage</a>
+            </li>
           </ul>
         </text>
 
@@ -49,10 +52,12 @@
           <image href="pinball/pinball-6.jpg"/>
           <image href="marble-clock/marble-clock-4.jpg"/>
           <image href="hs-objects/hs-objects-9.jpg"/>
+          <image href="freaky-stage/IMG_3023.JPG"/>
           <image href="binary-counter/binary-counter-3.jpg"/>
           <image href="column-marble-gambler/cmg-side-1.jpg"/>
           <image href="toilet-fan/toilet-fan-1.png"/>
           <image href="column-marble-gambler/cmg-front.jpg"/>
+          <image href="freaky-stage/IMG_3020.JPG"/>
         </carousel>
       </block>
 

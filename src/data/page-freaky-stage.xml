@@ -1,0 +1,37 @@
+<xwebgen-sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.xtpxlib.nl/ns/xwebgen ../../../xtpxlib-xwebgen/xsd/xwebgen-sections.xsd" xmlns="http://www.xtpxlib.nl/ns/xwebgen"
+  xmlns:xtlwg="http://www.xtpxlib.nl/ns/xwebgen">
+
+  <section id="page" href-transformer="xsl/convert-page.xsl">
+    <page xmlns="">
+
+      <titleblock next-project="hs-objects">The Freaky stage</titleblock>
+
+      <block layout="text-right">
+        <text>
+          <p>The "Freaky stage" is a miniature stage with a band in action.</p>
+          <p>It was used (among other things) to display the final song of our stage production (amateur theater group Quasi playing "Not just
+            Freaky", written and directed by Tanja&#160;Mensink, March/April 2026).</p>
+          <p>An AI-generated dramatic song concluded the performance. The song is in Dutch, with subtitles present.</p>
+        </text>
+        <carousel>
+          <image href="freaky-stage/IMG_3020.JPG"/>
+          <image href="freaky-stage/IMG_3021.JPG"/>
+          <image href="freaky-stage/IMG_3022.JPG"/>
+          <image href="freaky-stage/IMG_3023.JPG"/>
+          <image href="freaky-stage/IMG_3024.JPG"/>
+        </carousel>
+      </block>
+
+      <block layout="text-left">
+        <text>
+          <p>&#160;</p>
+          <p>Watch it in action…</p>
+        </text>
+        <youtube href="https://youtu.be/2WOTNPVO7qQ"/>
+      </block>
+
+    </page>
+  </section>
+
+</xwebgen-sections>
