@@ -27,6 +27,7 @@
   <page template-idref="main" href-section-document="data/page-toilet-fan.xml" section-idref="page" href-target="toilet-fan.html"/>
   <page template-idref="main" href-section-document="data/page-column-marble-gambler.xml" section-idref="page" href-target="column-marble-gambler.html"/>
   <page template-idref="main" href-section-document="data/page-freaky-stage.xml" section-idref="page" href-target="freaky-stage.html"/>
+  <page template-idref="main" href-section-document="data/page-neon-wave.xml" section-idref="page" href-target="neon-wave.html"/>
 
   <!-- ================================================================== -->
   <!-- FIXED DIRECTORIES: -->

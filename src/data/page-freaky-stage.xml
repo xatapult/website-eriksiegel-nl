@@ -10,9 +10,10 @@
       <block layout="text-right">
         <text>
           <p>The "Freaky stage" is a miniature stage with a band in action.</p>
-          <p>It was used (among other things) to display the final song of our stage production (amateur theater group Quasi playing "Not just
+          <p>It was used (among other things) to display the final song of our 2026 stage production (amateur theater group Quasi playing "Not just
             Freaky", written and directed by Tanja&#160;Mensink, March/April 2026).</p>
           <p>An AI-generated dramatic song concluded the performance. The song is in Dutch, with subtitles present.</p>
+          <p>In the same play, another device of me was used: <a href="neon-wave.html">the Neon Wave</a>.</p>
         </text>
         <carousel>
           <image href="freaky-stage/IMG_3020.JPG"/>
@@ -28,7 +29,7 @@
           <p>&#160;</p>
           <p>Watch it in action…</p>
         </text>
-        <youtube href="https://youtu.be/2WOTNPVO7qQ"/>
+        <youtube href="https://www.youtube.com/embed/2WOTNPVO7qQ"/>
       </block>
 
     </page>

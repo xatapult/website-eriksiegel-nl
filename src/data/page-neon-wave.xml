@@ -1,0 +1,38 @@
+<xwebgen-sections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.xtpxlib.nl/ns/xwebgen ../../../xtpxlib-xwebgen/xsd/xwebgen-sections.xsd" xmlns="http://www.xtpxlib.nl/ns/xwebgen"
+  xmlns:xtlwg="http://www.xtpxlib.nl/ns/xwebgen">
+
+  <section id="page" href-transformer="xsl/convert-page.xsl">
+    <page xmlns="">
+
+      <titleblock next-project="hs-objects">Neon Wave</titleblock>
+
+      <block layout="text-right">
+        <text>
+          <p>The "Neon Wave" is a rather weird contraption that was used in our 2026 stage production (amateur theater group Quasi playing "Not just Freaky",
+            written and directed by Tanja&#160;Mensink, March/April 2026)</p>
+          <p>It features: a flip-up screen displaying text, a robotic arm that examines the audience's faces and then sprays a mood-matching scent
+            into the crowd. Everything is, of course, fake and supposedly AI-driven.</p>
+          <p>In the same play, another device of me was used: <a href="freaky-stage.html">the Freaky stage</a>.</p>
+        </text>
+        <carousel>
+          <image href="neon-wave/IMG_3011.JPG"/>
+          <image href="neon-wave/IMG_3012.JPG"/>
+          <image href="neon-wave/IMG_3013.JPG"/>
+          <image href="neon-wave/IMG_3014.JPG"/>
+          <image href="neon-wave/IMG_3015.JPG"/>
+        </carousel>
+      </block>
+
+      <block layout="text-left">
+        <text>
+          <p>&#160;</p>
+          <p>Watch it in action…</p>
+        </text>
+        <youtube href="https://www.youtube.com/embed/ecVsggvbIiY"/>
+      </block>
+
+    </page>
+  </section>
+
+</xwebgen-sections>
